@@ -15,7 +15,7 @@
     </ul>
     <p>Lalu ketikkan perintah berikut pada terminal :</p>
      <ul>
-        <li>composer install</li>
+        <li>composer install --ignore-platform-req=ext-gd</li>
         <li>php artisan optimize:clear</li>
         <li>php artisan key:generate (generate app key)</li>
         <li>php artisan migrate (migrasi database)</li>
