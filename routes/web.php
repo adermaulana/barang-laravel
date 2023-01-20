@@ -42,7 +42,7 @@ Route::get('/dashboard',function(){
 
 
 //Excel
-Route::get('dashboard/barang/export',[ExportController::class,'export']);
+Route::get('dashboard/barang/export',[BarangController::class,'export']);
 
 //CRUDbarang
 Route::resource('/dashboard/barang',BarangController::class)->middleware('auth');

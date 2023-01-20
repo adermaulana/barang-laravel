@@ -7,6 +7,7 @@ use App\Models\Supplier;
 use App\Http\Requests\StoreBarangRequest;
 use App\Http\Requests\UpdateBarangRequest;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\BarangExport;
 
 class BarangController extends Controller
 {
