@@ -11,7 +11,7 @@
     <ul>
         <li>buka direktori project di terminal anda</li>
         <li>ketikan command : cp .env.example .env (copy paste file .env.example)</li>
-        <li>buat database ( sesuaikan nama database yang ada di project laravel ini )</li>
+        <li>buat database ( nama database = stokbarang )</li>
     </ul>
     <p>Lalu ketikkan perintah berikut pada terminal :</p>
      <ul>
