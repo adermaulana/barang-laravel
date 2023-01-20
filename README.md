@@ -23,8 +23,8 @@
     </ul>
     <h2>Fitur</h2>
      <ul>
-        <li>Login User</li>
-        <li>Registrasi</li>
+        <li>LOGIN USER</li>
+        <li>REGISTRASI</li>
         <li>CRUD BARANG</li>
         <li>CRUD SUPPLIER</li>
         <li>EXPORT KE EXCEL</li>
