@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\ExportController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SupplierController;
 
@@ -39,8 +40,14 @@ Route::get('/dashboard',function(){
     ]);
 })->middleware('auth');
 
+
+//Excel
+Route::get('dashboard/barang/export',[ExportController::class,'export']);
+
 //CRUDbarang
 Route::resource('/dashboard/barang',BarangController::class)->middleware('auth');
 
 //CRUDSupplier
 Route::resource('/dashboard/supplier',SupplierController::class)->middleware('auth');
+
+

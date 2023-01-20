@@ -6,6 +6,7 @@ use App\Models\Barang;
 use App\Models\Supplier;
 use App\Http\Requests\StoreBarangRequest;
 use App\Http\Requests\UpdateBarangRequest;
+use Maatwebsite\Excel\Facades\Excel;
 
 class BarangController extends Controller
 {
@@ -121,4 +122,10 @@ class BarangController extends Controller
 
         return redirect('/dashboard/barang')->with('success','Barang telah dihapus');
     }
+
+
+    public function export(){
+        return Excel::download(new BarangExport,'barang.xlsx');
+    }
+
 }

@@ -13,6 +13,7 @@
 
       <div class="table-responsive col-lg-10">
         <a style="background-color : black; color:white;" class="btn btn" href="/dashboard/barang/create">Tambah Barang Baru</a>
+        <a class="btn btn-success" href="/dashboard/barang/export">Export Excel</a>
         <table class="table table-striped table-sm mt-3">
           <thead>
             <tr>
